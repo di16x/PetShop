@@ -1,0 +1,22 @@
+{
+  "name": "petshop",
+  "version": "1.0.0",
+  "description": "Página para ser utilizadas para cadastrar animais e interessados",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/di16x/PetShop.git"
+  },
+  "keywords": [
+    "petshop"
+  ],
+  "author": "Diego Felix Tomé",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/di16x/PetShop/issues"
+  },
+  "homepage": "https://github.com/di16x/PetShop#readme"
+}
