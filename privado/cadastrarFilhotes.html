@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro De Interessados</title>
+    <link rel="stylesheet" href="estilo.css">
+
+</head>
+    <body>
+        <nav class="navbar">
+            <div class="container_nav">
+                
+                <ul class="nav-links">
+    
+                    <li><a href="login.html">Home</a></li>
+                    <li><a href="cadastrarFilhotes.html">Cadastro Filhotes<a></li>
+                    <li><a href="cadastrarInteressados.html">Cadastro de Interessados</a></li>
+                    <li><a href="login.html">Sair</a>
+                   
+    
+                    </a></li>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        
+    <div class="container">
+        <h1>Cadastro de Filhotes:</h1>
+      
+
+    <form id="forms" action="#" method="POST">
+    <label for="id"></label>
+    <input type ="text" class="input-cadastro" id="id" name="id" placeholder="Id do Filhote: " required>
+
+   
+    <label for="especie"></label>
+    <input type="text" class="input-cadastro" id="especie" name="especie" placeholder="Espécie: " required>
+
+   
+    <label for="raça"></label>
+    <input type="text" class="input-cadastro" id="raça" name="raça" placeholder="Raça do Filhote: " required>
+
+    <button type="submit" class="botaoConfirmar1">Cadastrar</button>        
+    
+    </form>
+</div>
+
+<div id="containerTabela"> </div>
+    </body>
+    <script src="js/filhotes.js"></script>
+</html>

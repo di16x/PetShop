@@ -14,7 +14,7 @@
                 <ul class="nav-links">
     
                     <li><a href="login.html">Home</a></li>
-                    <li><a href="cadastrarAnimais.html">Cadastro Animais<a></li>
+                    <li><a href="cadastrarFilhotes.html">Cadastro Filhotes<a></li>
                     <li><a href="cadastrarInterresados.html">Cadastro de Interresados</a></li>
                     <li><a href="login.html">Sair</a>
                    
@@ -26,20 +26,29 @@
         </nav>
         
     <div class="container">
-        <h1>Cadastro de Animais:</h1>
+        <h1>Cadastro de Interessados:</h1>
       
 
     <form id="forms" action="#" method="POST">
-    <label for="id"></label>
-    <input type ="text" class="input-cadastro" id="id" name="id" placeholder="Id do Animail: " required>
+    
+    <label for="nome"></label>
+    <input type ="text" class="input-cadastro" id="id" name="id" placeholder="Id do Interresado " required>
 
    
-    <label for="especie"></label>
-    <input type="text" class="input-cadastro" id="especie" name="especie" placeholder="Espécie: " required>
+    <label for="cpf"></label>
+    <input type="text" class="input-cadastro" id="cpf" name="cpf" placeholder="CPF: " required>
 
    
-    <label for="raça"></label>
-    <input type="text" class="input-cadastro" id="raça" name="raça" placeholder="Raça do Animal: " required>
+    <label for="nome"></label>
+    <input type="text" class="input-cadastro" id="nome_interessado" name="nome_interessado" placeholder="Nome do Interessado: " required>
+
+    <label for="tel"></label>
+    <input type="text" class="input-cadastro" id="tel" name="tel" placeholder="Telefone: " required>
+
+    <label for="Email"></label>
+    <input type="text" class="input-cadastro" id="Email" name="Email" placeholder="Email: " required>
+
+
 
     <button type="submit" class="botaoConfirmar1">Cadastrar</button>        
     
@@ -48,5 +57,5 @@
 
 <div id="containerTabela"> </div>
     </body>
-    <script src="js/animais.js"></script>
+    <script src="js/interessados.js"></script>
 </html>
