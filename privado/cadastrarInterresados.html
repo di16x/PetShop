@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro De Interresados</title>
+    <link rel="stylesheet" href="estilo.css">
+
+</head>
+    <body>
+        <nav class="navbar">
+            <div class="container_nav">
+                
+                <ul class="nav-links">
+    
+                    <li><a href="login.html">Home</a></li>
+                    <li><a href="cadastrarAnimais.html">Cadastro Animais<a></li>
+                    <li><a href="cadastrarInterresados.html">Cadastro de Interresados</a></li>
+                    <li><a href="login.html">Sair</a>
+                   
+    
+                    </a></li>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        
+    <div class="container">
+        <h1>Cadastro de Interessados:</h1>
+      
+
+    <form id="forms" action="#" method="POST">
+    
+    <label for="nome"></label>
+    <input type ="text" class="input-cadastro" id="id" name="id" placeholder="Id do Interresado " required>
+
+   
+    <label for="cpf"></label>
+    <input type="text" class="input-cadastro" id="cpf" name="cpf" placeholder="CPF: " required>
+
+   
+    <label for="nome"></label>
+    <input type="text" class="input-cadastro" id="nome_interresado" name="nome_interresado" placeholder="Nome do Interessado: " required>
+
+    <label for="tel"></label>
+    <input type="text" class="input-cadastro" id="tel" name="tel" placeholder="Telefone: " required>
+
+    <label for="Email"></label>
+    <input type="text" class="input-cadastro" id="Email" name="Email" placeholder="Email: " required>
+
+
+
+    <button type="submit" class="botaoConfirmar1">Cadastrar</button>        
+    
+    </form>
+</div>
+
+<div id="containerTabela"> </div>
+    </body>
+    <script src="js/interresados.js"></script>
+</html>
