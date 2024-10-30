@@ -159,7 +159,7 @@ function validarCampos(evento){
             motivoAcao = "CADASTRAR";
         }
         
-        formPartido.reset();
+        formInteressado.reset();
         buscarTodosInteressados();
         return true;
     }

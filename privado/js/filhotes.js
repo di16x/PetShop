@@ -13,7 +13,7 @@ function gravarFilhote(){
     const objetoFilhote = {
         id: document.getElementById('id').value,
         especie: document.getElementById('especie').value,
-        raça: document.getElementById('raça').value
+        raca: document.getElementById('raca').value
         
         
     }
@@ -39,12 +39,12 @@ function gravarFilhote(){
 
 }
 
-function selecionarFilhote(id, especie, raça, motivo) {
+function selecionarFilhote(id, especie, raca, motivo) {
 
    
-    document.getElementById('id').value = nome;
-    document.getElementById('especie').value = sigla;
-    document.getElementById('raça').value = num_registro;
+    document.getElementById('id').value = id;
+    document.getElementById('especie').value = especie;
+    document.getElementById('raca').value = raca;
    
 
     motivoAcao = motivo;
@@ -86,7 +86,7 @@ function atualizarFilhote(){
     const objetoFilhote = {
         id: document.getElementById('id').value,
         especie: document.getElementById('especie').value,
-        raça: document.getElementById('raça').value,
+        raca: document.getElementById('raca').value,
     }
 
     fetch(enderecoAPI, {
@@ -132,14 +132,14 @@ function validarCampos(evento){
     
     const id     = document.getElementById('id').value;
     const especie = document.getElementById('especie').value;
-    const raça   = document.getElementById('raça').value;
+    const raca   = document.getElementById('raca').value;
   
 
     
     evento.stopPropagation();
     evento.preventDefault();
 
-    if (id && especie && raça) {
+    if (id && especie && raca) {
         if (motivoAcao == "CADASTRAR"){
             gravarFilhote();
         }
@@ -193,12 +193,12 @@ function exibirTabelaFilhotes(listaFilhotes){
                 
                 <td>${filhote.id}</td>
                 <td>${filhote.especie}</td>
-                <td>${filhote.raça}</td>
+                <td>${filhote.raca}</td>
                
                
                 <td>
-                    <button onclick="selecionarFilhote('${filhote.id}','${filhote.especie}','${filhote.raça}','EDITAR')">Alterar</button>
-                    <button onclick="selecionarFilhote('${filhote.id}','${filhote.especie}','${filhote.raça}','EXCLUIR')">Excluir</button>
+                    <button onclick="selecionarFilhote('${filhote.id}','${filhote.especie}','${filhote.raca}','EDITAR')">Alterar</button>
+                    <button onclick="selecionarFilhote('${filhote.id}','${filhote.especie}','${filhote.raca}','EXCLUIR')">Excluir</button>
                 </td>
             `;
             corpo.appendChild(linha);
